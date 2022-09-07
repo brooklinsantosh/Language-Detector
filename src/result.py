@@ -1,5 +1,6 @@
 import numpy as np
 import pickle
+import os
 import plotly.graph_objects as go
 
 from src.modelling import Model
@@ -10,7 +11,7 @@ class Detect():
         pass
 
     def load_model(self):
-        file = open(const.MODEL_FILE, 'rb')
+        file = open(os.path.join(os.getcwd(),const.MODEL_FILE), 'rb')
         model = pickle.load(file)
         file.close()
         return model
