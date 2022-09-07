@@ -1,7 +1,7 @@
 # Language-Detector
 Web application to detect the language of the given text.
 
-## Software and Tools Requirements
+## Software and Tools Required
 
 1. [Github Account](https://github.com/)
 2. [Visual Studio Code IDE](https://code.visualstudio.com/)
