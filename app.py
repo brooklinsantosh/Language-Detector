@@ -26,6 +26,7 @@ mdl = Model()
 det = Detect()
 
 if not os.path.exists(const.MODEL_FILE):
+    print('------------retraining-------')
     mdl.train()
 
 if 'prepopulated' not in st.session_state or 'label' not in st.session_state:
