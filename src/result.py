@@ -10,7 +10,7 @@ class Detect():
         pass
 
     def load_model(self):
-        file = open(const.MODEL_FILE, 'rb')
+        file = open('LRModel.pckl', 'rb')
         model = pickle.load(file)
         file.close()
         return model

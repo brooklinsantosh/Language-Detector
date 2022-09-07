@@ -25,10 +25,6 @@ st.header('Language Detector')
 mdl = Model()
 det = Detect()
 
-
-if not os.path.exists(const.MODEL_FILE):
-    mdl.train()
-
 if 'prepopulated' not in st.session_state or 'label' not in st.session_state:
     st.session_state.prepopulated = ""
     st.session_state.label = ""
