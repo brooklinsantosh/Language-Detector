@@ -1,7 +1,6 @@
 import string
 import re
 import pickle
-import os
 import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -25,7 +24,7 @@ class Model():
         return text
 
     def train(self):
-        df = pd.read_csv(os.path.join(os.getcwd(),const.INPUT_FILE))
+        df = pd.read_csv(const.INPUT_FILE)
         df['Clean_Text'] = df['Text'].apply(self.preprocessor)
         X = df['Clean_Text']
         y = df['Language']
