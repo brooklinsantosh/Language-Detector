@@ -39,7 +39,7 @@ class Model():
         ])
         pipe_lr.fit(X_train,y_train)
 
-        lr_file = open(const.MODEL_FILE, 'wb')
+        lr_file = open(os.path.join(os.getcwd(),const.MODEL_FILE), 'wb')
         pickle.dump(pipe_lr, lr_file)
         lr_file.close()
     
