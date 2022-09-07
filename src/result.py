@@ -11,7 +11,8 @@ class Detect():
         pass
 
     def load_model(self):
-        file = open(os.path.join(os.getcwd(),const.MODEL_FILE), 'rb')
+        #file = open(os.path.join(os.getcwd(),const.MODEL_FILE), 'rb')
+        file = open('LRModel.pckl', 'rb')
         model = pickle.load(file)
         file.close()
         return model
