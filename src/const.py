@@ -1,4 +1,6 @@
+import os
+
 RANDOM_STATE = 42
 
-INPUT_FILE = "input\Language Detection.csv"
-MODEL_FILE = "output\LRModel.pckl"
+INPUT_FILE = os.path.join(os.getcwd(), "input\Language Detection.csv")
+MODEL_FILE = os.path.join(os.getcwd(), "output\LRModel.pckl")
