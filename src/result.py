@@ -37,7 +37,7 @@ class Detect():
         fig.update_layout(
             autosize = False,
             width = 300,
-            height = 275,
+            height = 250,
             margin = dict(
                 l = 50,
                 r = 50,
